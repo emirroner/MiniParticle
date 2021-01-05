@@ -4,7 +4,7 @@
 #include <SFML\Graphics.hpp>
 #include "..\..\include\MiniParticle.hpp"
 
-class CircularParticle : public Particle
+class CircularParticle : public MiniParticle
 {
 public:
 	CircularParticle();
@@ -14,7 +14,7 @@ public:
 	void update(float elapsed,float deltaTime);
 
 	float getRadius() const;
-	const sf::Color& getColor() const;
+	sf::Color getColor() const;
 	float getStartRadius() const;
 	float getStartLifeTime() const;
 

@@ -20,7 +20,7 @@ RectangularParticle::RectangularParticle(sf::Vector2f pos,sf::Vector2f velocity,
 
 void RectangularParticle::update(float elapsed,float deltaTime)
 {
-	Particle::update(elapsed,deltaTime);
+	MiniParticle::update(elapsed,deltaTime);
 
 	if (m_resize)
 		m_size = sf::Vector2f(
@@ -38,7 +38,7 @@ const sf::Vector2f& RectangularParticle::getSize() const
 	return m_size;
 }
 
-const sf::Color& RectangularParticle::getColor() const
+sf::Color RectangularParticle::getColor() const
 {
 	return m_color;
 }

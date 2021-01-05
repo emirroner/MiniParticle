@@ -5,7 +5,7 @@
 #include "..\..\include\MiniParticleSystem.hpp"
 #include "..\Particle\RectangularParticle.hpp"
 
-class RectangularParticleSystem : public ParticleSystem<RectangularParticle,sf::RectangleShape>
+class RectangularParticleSystem : public MiniParticleSystem<RectangularParticle,sf::RectangleShape>
 {
 public:
 

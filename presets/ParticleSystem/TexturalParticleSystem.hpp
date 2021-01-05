@@ -5,7 +5,7 @@
 #include "..\..\include\MiniParticleSystem.hpp"
 #include "..\Particle\RectangularParticle.hpp"
 
-class TexturalParticleSystem : public ParticleSystem<RectangularParticle,sf::Sprite>
+class TexturalParticleSystem : public MiniParticleSystem<RectangularParticle,sf::Sprite>
 {
 public:
 	TexturalParticleSystem();

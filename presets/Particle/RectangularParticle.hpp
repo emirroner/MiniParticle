@@ -4,7 +4,7 @@
 #include <SFML\Graphics.hpp>
 #include "..\..\include\MiniParticle.hpp"
 
-class RectangularParticle : public Particle
+class RectangularParticle : public MiniParticle
 {
 public:
 	RectangularParticle();
@@ -14,7 +14,7 @@ public:
 	void update(float elapsed,float deltaTime);
 
 	const sf::Vector2f& getSize() const;
-	const sf::Color& getColor() const;
+	sf::Color getColor() const;
 	const sf::Vector2f& getStartSize() const;
 	float getRotation() const;
 	float getStartLifeTime() const;

@@ -2,7 +2,7 @@
 #include "..\..\include\MiniParticleSystem.hpp"
 #include "..\Particle\CircularParticle.hpp"
 
-class CircularParticleSystem : public ParticleSystem<CircularParticle,sf::CircleShape>
+class CircularParticleSystem : public MiniParticleSystem<CircularParticle,sf::CircleShape>
 {
 public:
 	

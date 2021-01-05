@@ -18,7 +18,7 @@ CircularParticle::CircularParticle(sf::Vector2f pos,sf::Vector2f velocity,sf::Co
 
 void CircularParticle::update(float elapsed,float deltaTime)
 {
-	Particle::update(elapsed,deltaTime);
+	MiniParticle::update(elapsed,deltaTime);
 
 	if (m_resize)
 		m_radius = m_startRadius*m_lifeTime/m_startLifeTime;
@@ -32,7 +32,7 @@ float CircularParticle::getRadius() const
 	return m_radius;
 }
 
-const sf::Color& CircularParticle::getColor() const
+sf::Color CircularParticle::getColor() const
 {
 	return m_color;
 }
