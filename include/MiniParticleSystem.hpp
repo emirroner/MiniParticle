@@ -5,7 +5,7 @@
 
 // example : ParticleSystem<MyParticleClass,sf::RectangleShape>
 template <class T,class S>
-class ParticleSystem
+class MiniParticleSystem
 {
 public:
 	std::vector<T> particles;

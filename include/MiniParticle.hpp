@@ -3,7 +3,7 @@
 
 #include <SFML\Graphics.hpp>
 
-class Particle
+class MiniParticle
 {
 public:
 	virtual void update(float elapsed,float deltaTime);
