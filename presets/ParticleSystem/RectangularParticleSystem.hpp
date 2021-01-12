@@ -9,8 +9,8 @@ class RectangularParticleSystem : public MiniParticleSystem<RectangularParticle,
 {
 public:
 
-	void draw(sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates());
-	void drawID(unsigned short ID,sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates());
+	void draw(sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates::Default);
+	void drawID(unsigned short ID,sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates::Default);
 };
 
 #endif // RECTANGULAR_PARTICLE_SYSTEM_HPP

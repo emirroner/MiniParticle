@@ -6,7 +6,7 @@ class CircularParticleSystem : public MiniParticleSystem<CircularParticle,sf::Ci
 {
 public:
 	
-	virtual void draw(sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates());
+	virtual void draw(sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates::Default);
 
-	virtual void drawID(unsigned short ID,sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates());
+	virtual void drawID(unsigned short ID,sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates::Default);
 };

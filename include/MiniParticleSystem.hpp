@@ -41,7 +41,7 @@ public:
 		}
 	}
 	// draws all particles
-	virtual void draw(sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates())
+	virtual void draw(sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates::Default)
 	{
 		for (auto const& i : particles)
 		{
@@ -51,7 +51,7 @@ public:
 	}
 
 	// draws particles according to the ID
-	virtual void drawID(unsigned short ID,sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates())
+	virtual void drawID(unsigned short ID,sf::RenderTarget& target,sf::RenderStates states = sf::RenderStates::Default)
 	{
 		for (auto const& i : particles)
 		{
